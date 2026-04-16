@@ -59,7 +59,7 @@ export function WalletsPage() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {wallets?.map((wallet: any) => (
-          <Link key={wallet.id} to={`/wallets/${wallet.id}`}>
+          <Link key={wallet.id} to="/wallets/$id" params={{ id: wallet.id }}>
             <Card className="cursor-pointer transition-shadow hover:shadow-md">
               <CardHeader className="pb-2">
                 <div className="flex items-center justify-between">
